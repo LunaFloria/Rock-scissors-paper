@@ -19,6 +19,7 @@
     background-color: rgb(141, 172, 229);
     cursor: pointer;
     margin-bottom: 50px;
+    user-select: none;
 
 }
 
@@ -63,8 +64,8 @@ h1{
     display: block;
 }
 
-.wintext{
-    font-size: 30;
+.result-text{
+    font-size: 30px;
 }
 
 .points{

@@ -1,3 +1,4 @@
+let score = 0;
 const choices = ["rock", "scissors", "paper"];
 const winMatrix = 
 [
@@ -13,6 +14,7 @@ function play(buttonId){
     const computerChoice = getRandomInt(choices.length);
     const playerChoice = choices.indexOf(buttonId);
     const whoWon = winMatrix[playerChoice][computerChoice];
+    score = score + whoWon;
     console.log(choices[playerChoice], " vs ", choices[computerChoice], " ->", whoWon);
     const opponents = document.querySelectorAll(".opponent");
     for (let opponent of opponents)
@@ -25,7 +27,8 @@ function play(buttonId){
         result.classList.remove("active");
     results[whoWon+1].classList.add("active");
 
-    const points = document.getElementsByClassName("points")
+    const points = document.getElementById("points");
+    points.textContent = score.toString();
 }
 document.addEventListener("DOMContentLoaded", () => {
     const buttons = document.querySelectorAll(".button");
