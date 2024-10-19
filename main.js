@@ -20,6 +20,10 @@ function play(buttonId){
     const element = document.getElementById("op-"+choices[computerChoice]);
     element.classList.add("active");
 
+    const results = document.getElementById("results").children;
+    for (let result of results)
+        result.classList.remove("active");
+    results[whoWon+1].classList.add("active");
 }
 document.addEventListener("DOMContentLoaded", () => {
     const buttons = document.querySelectorAll(".button");

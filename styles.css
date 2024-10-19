@@ -20,13 +20,13 @@
     background-color: lightsalmon;
 }
 .button.active{
-    background-color: #64E986;
+    background-color: palegreen;
 }
 .opponent.active{
     background-color: #FBD5AB;
 }
 .button:hover{
-    background-color: palegreen;
+    background-color: #B5EAAA;
 }
 .button label, .opponent label{
     font-weight: bold;
@@ -47,5 +47,14 @@ h1{
     font-weight: bold;
     margin-top: 50px;
     margin-bottom: 50px;
-    /* visibility: hidden; */
+   
+}
+
+.results{
+    margin-top: 40px;
+    visibility: hidden;
+}
+
+.results .active {
+    visibility: visible;
 }
