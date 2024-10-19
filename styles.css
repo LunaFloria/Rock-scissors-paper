@@ -1,0 +1,51 @@
+.material-icons.large {
+    font-size: 100px;
+}
+.material-symbols-outlined.medium, .material-icons.medium {
+    font-size: 64px;
+}
+.button, .opponent{
+    margin-left: 20px;
+    text-align: center;
+    display: inline-block;
+    width: 120px;
+    border-radius: 4px;
+    color: white;
+}
+.button{
+    background-color: rgb(141, 172, 229);
+    cursor: pointer;
+}
+.opponent{
+    background-color: lightsalmon;
+}
+.button.active{
+    background-color: #64E986;
+}
+.opponent.active{
+    background-color: #FBD5AB;
+}
+.button:hover{
+    background-color: palegreen;
+}
+.button label, .opponent label{
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.buttons, .opponent-section, .results{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+#vs{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* visibility: hidden; */
+}
