@@ -24,6 +24,8 @@ function play(buttonId){
     for (let result of results)
         result.classList.remove("active");
     results[whoWon+1].classList.add("active");
+
+    const points = document.getElementsByClassName("points")
 }
 document.addEventListener("DOMContentLoaded", () => {
     const buttons = document.querySelectorAll(".button");

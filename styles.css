@@ -63,6 +63,11 @@ h1{
     display: block;
 }
 
-wintext.results{
-    font-size: px;
+.wintext{
+    font-size: 30;
+}
+
+.points{
+    font-size: 20px;
+    margin-top: 50px;
 }
