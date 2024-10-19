@@ -1,9 +1,11 @@
 .material-icons.large {
     font-size: 100px;
 }
+
 .material-symbols-outlined.medium, .material-icons.medium {
-    font-size: 64px;
+    font-size: 80px;
 }
+
 .button, .opponent{
     margin-left: 20px;
     text-align: center;
@@ -12,49 +14,55 @@
     border-radius: 4px;
     color: white;
 }
+
 .button{
     background-color: rgb(141, 172, 229);
     cursor: pointer;
+    margin-bottom: 50px;
+
 }
+
 .opponent{
-    background-color: lightsalmon;
+    background-color: #FBD5AB;
+    margin-top: 50px;
 }
+
 .button.active{
     background-color: palegreen;
 }
+
 .opponent.active{
-    background-color: #FBD5AB;
+    background-color: lightsalmon;
 }
+
 .button:hover{
     background-color: #B5EAAA;
 }
+
 .button label, .opponent label{
     font-weight: bold;
     font-size: 30px;
     color: white;
     cursor: pointer;
 }
+
 .buttons, .opponent-section, .results{
     text-align: center;
 }
+
 h1{
     text-align: center;
-    font-size: 40px;
-}
-#vs{
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    margin-top: 50px;
-    margin-bottom: 50px;
-   
+    font-size: 60px;
 }
 
-.results{
-    margin-top: 40px;
-    visibility: hidden;
+.results > div{
+    display: none;
 }
 
 .results .active {
-    visibility: visible;
+    display: block;
+}
+
+wintext.results{
+    font-size: px;
 }
