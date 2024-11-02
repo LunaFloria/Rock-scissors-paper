@@ -15,6 +15,13 @@
     color: white;
 }
 
+@media screen and (max-width:450px) {
+    .button, .opponent{
+        margin-left: 10px;
+        width: 110px;
+    }
+}
+
 .button{
     background-color: rgb(141, 172, 229);
     cursor: pointer;
@@ -56,6 +63,12 @@ h1{
     font-size: 60px;
 }
 
+@media screen and (max-width:600px) {
+    h1{
+        font-size: 30px;
+    }
+}
+
 .results > div{
     display: none;
 }
@@ -68,7 +81,19 @@ h1{
     font-size: 30px;
 }
 
-.points{
-    font-size: 20px;
+.score {
+    font-size: 25px;
     margin-top: 50px;
+    text-align: center;
+}
+
+.score > div{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.score span {
+    text-align: right;
 }
