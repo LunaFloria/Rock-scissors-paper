@@ -1,17 +1,18 @@
+
 let score = 0;
 let winsLoses = [0, 0, 0];
 const choices = ["rock", "scissors", "paper"];
-const winMatrix = 
-[
-    [0, 1, -1],
-    [-1, 0, 1],
-    [1, -1, 0],
-]
+const winMatrix =
+    [
+        [0, 1, -1],
+        [-1, 0, 1],
+        [1, -1, 0],
+    ]
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
-function play(buttonId){
+function play(buttonId) {
     const computerChoice = getRandomInt(choices.length);
     const playerChoice = choices.indexOf(buttonId);
     const whoWon = winMatrix[playerChoice][computerChoice];
@@ -22,7 +23,7 @@ function play(buttonId){
     const opponents = document.querySelectorAll(".opponent");
     for (let opponent of opponents)
         opponent.classList.remove("active");
-    const element = document.getElementById("op-"+choices[computerChoice]);
+    const element = document.getElementById("op-" + choices[computerChoice]);
     element.classList.add("active");
 
     const results = document.getElementById("results").children;
@@ -34,17 +35,16 @@ function play(buttonId){
     setValue("wins", winsLoses[2]);
     setValue("draws", winsLoses[1]);
     setValue("loses", winsLoses[0]);
-    
+
 }
-function setValue(id, value){
+function setValue(id, value) {
     const element = document.getElementById(id);
     element.textContent = value;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
     const buttons = document.querySelectorAll(".button");
-    function onClick(event)
-    {
+    function onClick(event) {
         for (let button of buttons)
             button.classList.remove("active");
         const button = event.currentTarget;
